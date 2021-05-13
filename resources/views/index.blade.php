@@ -43,16 +43,16 @@
 　                  
 　                  // ajax実行
 　                  $.ajax({
-　　　                  type : "POST",
+　　　                  type: "POST",
 　　　                  // 送信data
 　　　                  data: {
-　　　　                    name : name
+　　　　                    name: name
 　　　                  },
 　　　                  // url
-　　　                  url : 'sample_insert',
-　　　                  dataType : "json",
+　　　                  url: 'sample_insert',
+　　　                  dataType: "json",
 　　　                  // 通信に成功した場合
-　　　                  success : function(json) {
+　　　                  success: function(json) {
 　　　　                    console.log(json);
 　　　　                    alert("新規登録に成功しました！！！");
 　　　　                    // 再表示
@@ -62,7 +62,7 @@
                             }, 500);
 　　　                  },
 　　　                  // 失敗した場合
-　　　                  error : function(XMLHttpRequest, textStatus, errorThrown) {
+　　　                  error: function(XMLHttpRequest, textStatus, errorThrown) {
 　　　　                    alert("新規登録時にエラーが発生しました：" + textStatus + ":\n" + errorThrown);
 　　　                  }
 　                  });
@@ -87,17 +87,17 @@
 
 　                  // ajax実行
 　                  $.ajax({
-　　　                  type : "POST",
+　　　                  type: "POST",
 　　　                  // 送信data
 　　　                  data: {
 　　　                      id: id,
-　　　　                    name : name
+　　　　                    name: name
 　　　                  },
 　　　                  // url
-　　　                  url : 'sample_update',
-　　　                  dataType : "json",
+　　　                  url: 'sample_update',
+　　　                  dataType: "json",
 　　　                  // 通信に成功した場合
-　　　                  success : function(json) {
+　　　                  success: function(json) {
 　　　　                    console.log(json);
 　　　　                    alert("更新に成功しました！！！");
 　　　　                    // 再表示
@@ -107,7 +107,7 @@
                             }, 500);
 　　　                  },
 　　　                  // 失敗した場合
-　　　                  error : function(XMLHttpRequest, textStatus, errorThrown) {
+　　　                  error: function(XMLHttpRequest, textStatus, errorThrown) {
 　　　　                    alert("更新時にエラーが発生しました：" + textStatus + ":\n" + errorThrown);
 　　　                  }
 　                  });
@@ -135,16 +135,16 @@
 
 　                  // ajax実行
 　                  $.ajax({
-　　　                  type : "GET",
+　　　                  type: "GET",
 　　　                  // 送信data
 　　　                  data: {
 　　　                      id: id
 　　　                  },
 　　　                  // url
-　　　                  url : 'sample_delete',
-　　　                  dataType : "json",
+　　　                  url: 'sample_delete',
+　　　                  dataType: "json",
 　　　                  // 通信に成功した場合
-　　　                  success : function(json) {
+　　　                  success: function(json) {
 　　　　                    console.log(json);
 　　　　                    alert("削除に成功しました！！！");
 　　　　                    // 再表示
@@ -154,7 +154,7 @@
                             }, 500);
 　　　                  },
 　　　                  // 失敗した場合
-　　　                  error : function(XMLHttpRequest, textStatus, errorThrown) {
+　　　                  error: function(XMLHttpRequest, textStatus, errorThrown) {
 　　　　                    alert("削除時にエラーが発生しました：" + textStatus + ":\n" + errorThrown);
 　　　                  }
 　                  });
