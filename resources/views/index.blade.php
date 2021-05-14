@@ -7,11 +7,14 @@
     <body>
         <h1>{{ $title }}</h1>
         <?php // 新規入力エリア ?>
+        <!-- <form action="post" src="sample_insert2"> -->
         <div style="padding-left:60px;">
             <input type="text" value="" id="u_name" />
             <input type="button" value="新規作成" id="btn_insert" />
         </div>
+        <!-- </from> -->
         <?php // 更新・削除エリア ?>
+        <!-- <form action="post" src="sample_update2"> -->
         <ul>
             <?php // dd($list); ?>
             @foreach ($list as $data)
@@ -24,6 +27,7 @@
                 </li>
             @endforeach
         </ul>
+        <!-- </from> -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script>
             $(document).ready(function() {
